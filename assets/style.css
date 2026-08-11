@@ -1,0 +1,15 @@
+
+:root{--ink:#20241f;--muted:#6b716a;--line:#d7dbd4;--paper:#fafbf8;--panel:#fff;--accent:#39483a;--warning:#8a6b22}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 Georgia,"Times New Roman",serif}
+header{background:#1c241d;color:#eef2ed;padding:14px 5%;display:flex;gap:24px;align-items:center;justify-content:space-between;font-family:Arial,sans-serif}
+.brand{font-weight:700;letter-spacing:2px;font-size:14px}.nav a{color:#dfe8df;text-decoration:none;margin-left:18px;font-size:13px}.nav a:hover{text-decoration:underline}
+main{max-width:960px;margin:auto;padding:46px 24px;min-height:78vh}h1,h2,h3{line-height:1.25}h1{font-size:38px}.kicker{font:11px Arial,sans-serif;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+.lead{font-size:20px;max-width:720px}.panel{background:var(--panel);border:1px solid var(--line);padding:26px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{display:block;background:#fff;border:1px solid var(--line);padding:20px;text-decoration:none;color:inherit}.card:hover{border-color:#778276}.small{font-size:13px;color:var(--muted)}.meta{font:12px Arial,sans-serif;color:var(--muted)}
+.notice{border-left:4px solid var(--accent);background:#eef1ec;padding:14px 18px;margin:22px 0}.warning{border-left-color:var(--warning);background:#f6f0df}
+.clue{background:#fff9d8;border:1px dashed #a99652;padding:14px 18px;margin:18px 0}.redacted{background:#222;color:#222;padding:0 5px}.redacted:hover{color:#fff}
+table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:10px;border:1px solid var(--line);text-align:left}th{background:#f0f2ed}
+blockquote{border-left:3px solid #aaa;margin:20px 0;padding-left:18px;color:#565b56}
+a{color:#344d38}.search{display:flex;gap:8px;max-width:650px}.search input{flex:1;padding:12px;border:1px solid #aaa;font:16px Georgia,serif}.search button{padding:12px 18px;border:0;background:#253127;color:white;cursor:pointer}
+.result{margin-top:18px}.result a{display:block;padding:12px;background:#fff;border:1px solid var(--line);margin:8px 0;text-decoration:none}.locked{background:#20261f;color:#e9eee8;padding:24px;font-family:monospace}
+footer{text-align:center;border-top:1px solid var(--line);padding:24px;color:#777;font:12px Arial,sans-serif}
+@media(max-width:650px){header{align-items:flex-start;flex-direction:column}.nav a{margin:0 14px 0 0}h1{font-size:31px}}
