@@ -1,9 +1,5 @@
-<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>公开索引</title><link rel="stylesheet" href="search.html"></head>
-<body><header><div class="brand">PUBLIC INDEX</div><nav class="nav"><a href="index.html">首页</a><a href="sites/evan/index.html">林逸网站</a><a href="sites/chronicle/index.html">灰港日报</a><a href="sites/harbor/index.html">Harbor Tower</a><a href="search.html">搜索</a></nav></header>
-<main><div class="kicker">公共索引</div><h1>网站搜索</h1>
-<p>这个搜索框只检索公开索引。隐藏页面不会直接出现在这里。</p>
-<div class="panel"><form class="search" data-search><input aria-label="搜索关键词" placeholder="例如：Harbor Tower"><button>搜索</button></form><div class="result"></div></div>
-<div class="notice warning"><b>提示</b><br>如果你看到一个看起来毫无意义的数字，不要马上忽略它。日期、楼层和时间可能都是关键词。</div>
-<script src="assets/search.js"></script></main><footer>本网站为虚构调查游戏 · 《第17层》</footer></body></html>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>公开索引 · Greyhaven Archive</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><header><div class="wrap inner"><div class="brand">PUBLIC <span>INDEX</span></div><nav class="nav"><a href="index.html">首页</a><a href="sites/evan/index.html">林逸网站</a><a href="sites/chronicle/index.html">灰港日报</a><a href="sites/harbor/index.html">Harbor Tower</a><a class="active" href="search.html">搜索</a></nav></div></header>
+<main class="page"><div class="kicker">PUBLIC ARCHIVE / SEARCH</div><h1>公开索引</h1><p class="lead">这套索引只收录公开网页。隐藏档案不会直接出现在这里——如果你发现一个看似毫无意义的数字，先把它记下来。</p>
+<div class="panel"><div class="meta" style="margin-bottom:12px">SEARCH DATABASE · 17 RECORDS</div><form class="search" data-search><input aria-label="搜索关键词" placeholder="输入人名、日期、楼层或关键词…"><button>检索</button></form><div class="result"></div></div>
+<div class="notice warning"><b>调查者提示</b><br>日期、楼层、时间可能都是关键词。试试你已经在其他页面见过的数字。</div></main><footer><div class="footer-inner">GREYHAVEN PUBLIC ARCHIVE · FICTIONAL INVESTIGATION GAME</div></footer><script src="assets/search.js"></script><script>const q=new URLSearchParams(location.search).get('q');if(q){document.querySelector('[data-search] input').value=q;document.querySelector('[data-search]').dispatchEvent(new Event('submit',{cancelable:true,bubbles:true}))}</script></body></html>
