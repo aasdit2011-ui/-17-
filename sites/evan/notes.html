@@ -5,8 +5,7 @@
 <article id="secret" class="panel secret" hidden><div class="meta">本地记录 · 2019年10月</div><h2>10 / 17</h2><p>今晚不要带相机包。只带一台小机身。</p><p>如果门还是开着，我从<strong class="clue">服务楼梯</strong>上去。</p><p>最后一张照片还留在公开页面里。</p><p class="meta">— E</p></article>
 </main><footer><div class="wrap">林逸个人网站 · 私人记录</div></footer>
 <script>
-const USER='elin.archive', HASH='340da3013a01f23e41c83bde3f63745f03f617f6e9c89410cde7f5ac5a9d9cf2';
-async function digest(s){const b=new TextEncoder().encode(s);const h=await crypto.subtle.digest('SHA-256',b);return [...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,'0')).join('');}
-document.getElementById('loginForm').addEventListener('submit',async e=>{e.preventDefault();const u=document.getElementById('user').value.trim();const p=document.getElementById('pw').value.replace(/\s+/g,'');const ok=await digest(p.toLowerCase())===HASH;if(u===USER&&ok){document.getElementById('gate').hidden=true;document.getElementById('secret').hidden=false;sessionStorage.setItem('notesUnlocked','1')}else document.getElementById('error').hidden=false;});
+const USER='elin.archive', PASSWORD='harbor1017';
+document.getElementById('loginForm').addEventListener('submit',e=>{e.preventDefault();const u=document.getElementById('user').value.trim();const p=document.getElementById('pw').value.replace(/\s+/g,'');if(u===USER&&p.toLowerCase()===PASSWORD){document.getElementById('gate').hidden=true;document.getElementById('secret').hidden=false;sessionStorage.setItem('notesUnlocked','1')}else document.getElementById('error').hidden=false;});
 if(sessionStorage.getItem('notesUnlocked')==='1'){document.getElementById('gate').hidden=true;document.getElementById('secret').hidden=false;}
 </script></body></html>
