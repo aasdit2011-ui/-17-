@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EVAN LIN · PRIVATE NOTES</title><link rel="stylesheet" href="../../assets/style.css"></head>
-<body class="evan private-page"><header class="sitebar"><div class="wrap bar"><a class="logo" href="index.html" style="text-decoration:none">EVAN LIN</a><nav class="nav"><a href="../../index.html">调查入口</a><a href="index.html">个人主页</a><a href="journal.html">日志</a><a href="photos.html">摄影</a></nav></div></header>
+<body class="evan private-page"><header class="sitebar"><div class="wrap bar"><a class="logo" href="index.html" style="text-decoration:none">EVAN LIN</a><nav class="nav"><a href="../../index.html">调查入口</a><a href="index.html">个人主页</a><a href="journal.html">日志</a><a href="photos.html">摄影</a><a href="messages.html">消息</a></nav></div></header>
 <main><div class="eyebrow">PRIVATE / LOCAL ARCHIVE</div><h1 class="title">Notes</h1>
-<div id="gate" class="login-panel panel"><div class="meta">PASSWORD REQUIRED</div><p>这部分内容没有公开。</p><form id="loginForm" class="login-form"><label for="pw">密码</label><input id="pw" type="password" autocomplete="off"><button class="btn primary" type="submit">打开</button></form><p id="error" class="login-error" hidden>密码不正确。</p></div>
+<div id="gate" class="login-panel panel"><div class="meta">PASSWORD REQUIRED</div><p>这部分内容没有公开。</p><form id="loginForm" class="login-form"><label for="user">用户名<input id="user" autocomplete="off"></label><label for="pw">密码<input id="pw" type="password" autocomplete="off"></label><button class="btn primary" type="submit">打开</button></form><p id="error" class="login-error" hidden>密码不正确。</p></div>
 <article id="secret" class="panel secret" hidden><div class="meta">LOCAL NOTEBOOK · OCT 2019</div><h2>10 / 17</h2><p>今晚不要带相机包。只带一台小机身。</p><p>如果门还是开着，我从<strong>服务楼梯</strong>上去。</p><p>我已经把最后一张照片留在公开页面里。文件名不能改。</p><p class="meta">— E</p></article>
 </main><footer><div class="wrap">本网站为虚构调查游戏 · 《第17层》</div></footer>
 <script>
-const HASH='8d7a7f8e4d2b8c8f2d7a8f7f2a6b1f7a0c4c7d9e3f7c2f1e5b4c7a9d0e1f2a3';
+const USER='elin.archive';
 async function digest(s){const b=new TextEncoder().encode(s);const h=await crypto.subtle.digest('SHA-256',b);return [...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,'0')).join('');}
-document.getElementById('loginForm').addEventListener('submit',async e=>{e.preventDefault();const ok=await digest(document.getElementById('pw').value)==='b9e8f8ae99e16ce0158df4062cb8b05be1cc844336079daa5a96a0ccc5617f8e';if(ok){document.getElementById('gate').hidden=true;document.getElementById('secret').hidden=false;sessionStorage.setItem('notesUnlocked','1');}else document.getElementById('error').hidden=false;});
+document.getElementById('loginForm').addEventListener('submit',async e=>{e.preventDefault();const u=document.getElementById('user').value.trim();const ok=await digest(document.getElementById('pw').value)==='05e3fc3cabbfd70dc64a0b8c09ffc84f6a807782ba6cc4c5fceb1e38e1e48b69';if(u===USER && ok){document.getElementById('gate').hidden=true;document.getElementById('secret').hidden=false;sessionStorage.setItem('notesUnlocked','1');}else document.getElementById('error').hidden=false;});
 if(sessionStorage.getItem('notesUnlocked')==='1'){document.getElementById('gate').hidden=true;document.getElementById('secret').hidden=false;}
 </script></body></html>
