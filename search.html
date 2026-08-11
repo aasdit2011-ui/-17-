@@ -1,24 +1,26 @@
-<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GREYHAVEN PUBLIC INDEX</title><link rel="stylesheet" href="assets/style.css"></head>
-<body class="search-page"><header class="sitebar"><div class="wrap bar"><a class="logo" href="index.html" style="text-decoration:none">GREYHAVEN PUBLIC INDEX</a><nav class="nav"><a href="index.html">首页</a><a href="sites/evan/index.html">林逸网站</a><a href="sites/chronicle/index.html">灰港日报</a><a href="sites/harbor/index.html">Harbor Tower</a><a href="search.html">搜索</a></nav></div></header>
-<main><div class="eyebrow">PUBLIC ARCHIVE / SEARCH</div><h1 class="title">公开索引</h1><p class="subtitle">Greyhaven 公共网页的残留索引。</p>
-<section class="search-box"><div class="meta">PUBLIC INDEX · 11 RECORDS</div><form class="search-form" id="searchForm"><input id="q" autocomplete="off" placeholder="姓名、日期、数字、地点……"><button>检索</button></form><div id="results" class="search-results"></div></section></main>
-<footer><div class="wrap">本网站为虚构调查游戏 · 《第17层》 · 所有人物、机构及记录均为虚构</div></footer>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>灰港公开索引</title><link rel="stylesheet" href="assets/style.css"></head><body class="search-page">
+<header class="sitebar"><div class="wrap bar"><a class="logo" href="index.html" style="text-decoration:none">灰港公开索引</a><nav class="nav"><a href="index.html">首页</a><a href="sites/evan/index.html">林逸网站</a><a href="sites/chronicle/index.html">灰港日报</a><a href="sites/harbor/index.html">Harbor Tower</a><a href="sites/police/index.html">警方档案</a><a href="search.html">搜索</a></nav></div></header>
+<main><div class="eyebrow">公开网页 / 索引</div><h1 class="title">公开索引</h1><p class="subtitle">这里只保存少量仍能访问的旧网页。</p>
+<section class="search-box"><div class="meta">索引记录 · 8 条</div><form class="search-form" id="searchForm"><input id="q" autocomplete="off" placeholder="姓名、日期、数字、地点……"><button>检索</button></form><div id="results" class="search-results"></div></section></main>
+<footer><div class="wrap">灰港公开索引 · 虚构网站</div></footer>
 <script>
 const records=[
- {keys:['17','17层','第17层','LEVEL 17'],title:'Untitled_1017 · 摄影记录',url:'sites/evan/photo-1017.html',type:'林逸个人网站',desc:'2019年10月17日上传的一张无标题照片。'},
- {keys:['17','LEVEL 17','S-3'],title:'LEVEL 17 · 内部档案',url:'archive/level17.html',type:'Northstar 内部档案',desc:'关于楼层编号和 S-3 服务通道的内部记录。'},
- {keys:['2019/10/17','10/17','1017'],title:'2019/10/17 · 被删除的日志',url:'sites/evan/journal-1017.html',type:'林逸个人网站',desc:'页面残留的最后一篇日志。'},
- {keys:['03:17','0317'],title:'03:17 · 服务器访问记录',url:'archive/0317.html',type:'服务器日志',desc:'一次来自 Harbor Tower 内部网络的访问。'},
- {keys:['A.VALE','Adrian Vale','Vale'],title:'Adrian Vale · 人物档案',url:'people/adrian-vale.html',type:'公开人物档案',desc:'Northstar Facilities 创始人与 Harbor Tower 翻修项目顾问。'},
- {keys:['2017','翻修'],title:'Harbor Tower 翻修工程完成',url:'sites/chronicle/article-2017.html',type:'灰港日报',desc:'2017年翻修报道。'},
- {keys:['2017','16层','16'],title:'Harbor Tower · 建筑历史',url:'sites/harbor/history.html',type:'官方建筑档案',desc:'建筑历年公开资料。'},
- {keys:['S-3','service stairwell'],title:'LEVEL 17 · S-3',url:'archive/level17.html',type:'Northstar 内部档案',desc:'服务楼梯编号出现在内部记录中。'},
- {keys:['林逸','Evan Lin','失踪'],title:'林逸 · 个人网站',url:'sites/evan/index.html',type:'个人网站',desc:'公开的个人主页、日志与摄影。'},
- {keys:['notes','private','私人笔记'],title:'Evan Lin · Notes',url:'sites/evan/notes.html',type:'个人网站',desc:'个人网站中的私人笔记页面。'},
- {keys:['林逸失踪','2019/10/21'],title:'17岁学生林逸失踪',url:'sites/chronicle/missing.html',type:'灰港日报',desc:'2019年10月21日的失踪案报道。'}
+ {keys:['17','17层','第17层'],title:'Untitled_1017 · 摄影记录',url:'sites/evan/photo-1017.html',type:'林逸个人网站',desc:'2019年10月17日留下的一张无标题照片。'},
+ {keys:['17','10/17','1017'],title:'2019/10/17 · 被删除的日志',url:'sites/evan/journal-1017.html',type:'林逸个人网站',desc:'页面残留的最后一篇日志。'},
+ {keys:['03:17','0317'],title:'03:17 · 访问记录',url:'archive/0317.html',type:'旧服务器记录',desc:'一次来自 Harbor Tower 内部网络的访问。'},
+ {keys:['H-17','H17'],title:'Harbor · 摄影记录',url:'sites/evan/photo-harbor.html',type:'林逸个人网站',desc:'一张拍摄于港区的建筑照片。'},
+ {keys:['Harbor Tower','Harbor'],title:'Harbor Tower · 建筑历史',url:'sites/harbor/history.html',type:'建筑公开资料',desc:'Harbor Tower 的历年公开资料。'},
+ {keys:['A.VALE','Adrian Vale'],title:'Adrian Vale · 人物档案',url:'people/adrian-vale.html',type:'公开人物档案',desc:'Northstar Facilities 创始人及翻修项目顾问。'},
+ {keys:['林逸','Evan Lin','失踪'],title:'林逸 · 个人网站',url:'sites/evan/index.html',type:'个人网站',desc:'公开主页、日志和摄影作品。'},
+ {keys:['GH-MP-2019-1017-17'],title:'林逸失踪案 · 警方档案',url:'sites/police/index.html',type:'警方公开系统',desc:'需要完整档案编号才能检索。'}
 ];
 const norm=s=>s.trim().toLowerCase().replace(/\s+/g,'');
-function run(){const q=norm(document.getElementById('q').value);const box=document.getElementById('results');if(!q){box.innerHTML='';return;}const seen=new Set(),matches=[];for(const r of records){if(!seen.has(r.url)&&r.keys.some(k=>norm(k)===q || (q.length>=2&&norm(k).includes(q)))){seen.add(r.url);matches.push(r);}}if(!matches.length){box.innerHTML='<div class="panel"><b>没有公开记录。</b></div>';return;}box.innerHTML=matches.map(r=>`<a class="search-result" href="${r.url}"><span class="meta">${r.type}</span><h3>${r.title}</h3><p>${r.desc}</p></a>`).join('');}
-document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();run();});const initial=new URLSearchParams(location.search).get('q');if(initial){document.getElementById('q').value=initial;run();}
+function run(){const q=norm(document.getElementById('q').value);const box=document.getElementById('results');if(!q){box.innerHTML='';return;}
+const matches=records.filter(r=>r.keys.some(k=>norm(k)===q || (q.length>=3&&norm(k).includes(q)))).slice(0,4);
+if(!matches.length){box.innerHTML='<div class="panel"><b>没有公开记录。</b></div>';return;}
+box.innerHTML=matches.map(r=>`<a class="search-result" href="${r.url}"><span class="meta">${r.type}</span><h3>${r.title}</h3><p>${r.desc}</p></a>`).join('');
+}
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();run();});
+const initial=new URLSearchParams(location.search).get('q');if(initial){document.getElementById('q').value=initial;run();}
 </script></body></html>
