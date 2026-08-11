@@ -1,11 +1,12 @@
 # 《第17层》
 
-多网页中文悬疑调查游戏。纯静态 HTML/CSS/JavaScript，可直接部署到 GitHub Pages。
+一个纯静态 HTML/CSS/JavaScript 多网页中文悬疑调查游戏。
 
-## 上传
-将整个文件夹内容上传到 GitHub repository 根目录，GitHub Pages 选择 `main` + `/ (root)`。
+## GitHub Pages
+1. 将整个 `the_17th_floor` 文件夹中的内容上传到 repository 根目录。
+2. GitHub → Settings → Pages。
+3. Source 选择 `Deploy from a branch`。
+4. Branch 选择 `main`，目录选择 `/ (root)`，保存。
+5. 等待 Pages 完成部署后，打开生成的网站地址。
 
-## 游戏结构
-玩家从林逸个人网站开始，通过照片、日志、新闻、建筑官网、记者档案和公开搜索逐步发现隐藏档案。
-
-本项目为虚构作品。
+本版本包含两张游戏内证据照片，并移除了重复的档案页面和无内容的假搜索结果。所有内部链接均为相对路径，可直接放在 GitHub Pages 上运行。

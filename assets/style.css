@@ -43,3 +43,24 @@ strong.clue:hover{
 
 .trail{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:10px 12px;border:1px solid var(--line);background:rgba(255,255,255,.03);font:12px Arial,sans-serif}
 .trail a{color:#b8c4b7;text-decoration:none}.trail a:hover{color:#fff;text-decoration:underline}.search-result{display:block;padding:12px 14px;background:#fff;border:1px solid var(--line);margin:8px 0;text-decoration:none}.search-result:hover{border-color:#8d9a8b}
+
+.search-result h3{font-family:var(--serif);font-size:20px;color:#eee}
+.search-result p{line-height:1.7}
+.search-result{transition:transform .15s ease,border-color .15s ease,background .15s ease}
+.search-result:hover{transform:translateY(-2px);background:rgba(255,255,255,.045)}
+
+/* Evidence photography */
+.evidence-photo{position:relative;overflow:hidden;border:1px solid #2b3332;background:#090c0c;margin:24px 0;box-shadow:0 22px 70px #0009}
+.evidence-photo img{display:block;width:100%;height:auto;max-height:720px;object-fit:cover;transition:transform .45s ease,filter .45s ease}
+.evidence-photo:hover img{transform:scale(1.012);filter:brightness(1.04)}
+.evidence-photo .photo-label{position:absolute;left:14px;bottom:14px;padding:7px 10px;background:#050707d9;border:1px solid #ffffff18;color:#d6dcda;font:10px var(--mono);letter-spacing:.12em}
+.photo-grid .photo-real{display:block;background-size:cover;background-position:center;text-decoration:none;min-height:300px}
+.photo-grid .photo-real.harbor-shot{background-image:linear-gradient(180deg,#0000 45%,#000b),url('../assets/harbor-tower.png')}
+.photo-grid .photo-real.untitled-shot{background-image:linear-gradient(180deg,#0000 45%,#000b),url('../assets/untitled-1017.png')}
+.photo-grid .photo-real:hover{filter:brightness(1.08)}
+.photo-caption{margin-top:10px;color:#8d9793;font:11px var(--mono)}
+.lightbox{position:fixed;inset:0;background:#020303ee;display:none;place-items:center;padding:28px;z-index:100}
+.lightbox:target{display:grid}
+.lightbox img{max-width:min(1200px,96vw);max-height:90vh;border:1px solid #ffffff20;box-shadow:0 30px 100px #000}
+.lightbox .close{position:absolute;top:18px;right:24px;font:24px var(--mono);text-decoration:none;color:#fff}
+@media(max-width:600px){.evidence-photo img{max-height:520px}.photo-grid .photo-real{min-height:220px}}
